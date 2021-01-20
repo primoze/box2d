@@ -4,5 +4,5 @@
 rm -rf build
 mkdir build
 cd build
-cmake -DBOX2D_BUILD_DOCS=OFF ..
+cmake -DBOX2D_BUILD_DOCS=OFF -DCMAKE_INSTALL_PREFIX="$1" ..
 cmake --build .
